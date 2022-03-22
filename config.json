@@ -7,6 +7,8 @@
 	"spk_api" : "https://spktoken.dlux.io/@",
 	"json_id_claim" : "spkcc_claim",
 	"json_id_send" : "spkcc_send",
+	"is_claim" : true,
+	"is_send" : true,
 	"send_to" : "",
 	"send_memo" : "",
 	"decimal" : 1000,
