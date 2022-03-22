@@ -1,0 +1,39 @@
+{
+	"enabled" : true,
+	"trigger" : {
+		"hour" : 12,
+		"minute" : 0
+	},
+	"spk_api" : "https://spktoken.dlux.io/@",
+	"json_id_claim" : "spkcc_claim",
+	"json_id_send" : "spkcc_send",
+	"send_to" : "",
+	"send_memo" : "",
+	"decimal" : 1000,
+	"timeout" : 5000,
+	"rec_timeout" : 1000,
+	"he_timeout" : 9000,
+	"block_timeout" : 9000,
+	"user_setting" : {
+		"accounts" : [
+			["username_1", "active_key_1", true, false],
+			["username_2", "active_key_1", true, true],
+			["username_2", "active_key_1", true, true]
+		]
+	},
+	"rpc_nodes" : [
+		"https://api.deathwing.me",
+		"https://hive.roelandp.nl",
+		"https://api.openhive.network",
+		"https://rpc.ausbit.dev",
+		"https://hived.emre.sh",
+		"https://hive-api.arcange.eu",
+		"https://api.hive.blog",
+		"https://api.c0ff33a.uk",
+		"https://rpc.ecency.com",
+		"https://anyx.io",
+		"https://techcoderx.com",
+		"https://hived.privex.io",
+		"https://api.followbtcnews.com/"
+	]
+}
