@@ -1,5 +1,5 @@
 # spk_claim_bot
-This script can be used to claim SPK-Network LARYNX tokens per every month / per day.
+This script can be used to claim SPK-Network LARYNX tokens per every month / day.
 
 ***
 ## Installation
