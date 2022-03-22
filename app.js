@@ -120,15 +120,22 @@ const getClaimRequest = async (accountName) => {
     try 
 	{
         const res = await axios.get(SPKAPI + accountName);
+		var availAmount = parseInt(res.data.drop.availible.amount) || 0;
 		var lastClaim = parseInt(res.data.drop.last_claim) || 0;
 		var totalClaims = parseInt(res.data.drop.total_claims) || 0;
-		
-		if(lastClaim != 0 && totalClaims != 0)
+		if(availAmount > 0)
 		{
-			if(lastClaim == totalClaims)
+			if(lastClaim > 0 && totalClaims > 0)
 			{
-				claimStatus = true;
+				if(lastClaim == totalClaims)
+				{
+					claimStatus = true;
+				}
 			}
+		}
+		else
+		{
+			claimStatus = true;
 		}		
 		return claimStatus;
     } 
