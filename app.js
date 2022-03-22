@@ -15,6 +15,9 @@ var SPKAPI = config.spk_api;
 var JSONIDCLAIM = config.json_id_claim;
 var JSONIDSEND = config.json_id_send;
 
+var ISCLAIM = config.is_claim;
+var ISSEND = config.is_send;
+
 var SENDTO = config.send_to;
 var SENDMEMO = config.send_memo;
 
@@ -36,8 +39,14 @@ function timeout(ms) {
 const processLARYNX = async () => {
 	try 
 	{
-		await claimProcess();
-		await sendProcess();
+		if(ISCLAIM == true)
+		{
+			await claimProcess();
+		}
+		if(ISSEND == true)
+		{
+			await sendProcess();
+		}
 	} 
 	catch (error) 
 	{
